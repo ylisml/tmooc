@@ -25,6 +25,16 @@ public class UserController {
         System.out.println("开始处理删除用户！！！！！！！！");
         String usernam = request.getParameter("username");
         System.out.println("要删除的用户是：" + usernam);
+
+        File file = new File(userDir,usernam + ".obj");
+        file.delete();
+        try {
+            response.sendRedirect("/userList");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
     }
 
 
