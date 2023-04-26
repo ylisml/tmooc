@@ -1,4 +1,4 @@
-﻿package collection;
+package collection;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,7 +19,7 @@ public class SortListDemo2 {
         Comparator<Point> c = new Comparator<Point>() {
             @Override
             public int compare(Point o1, Point o2) {
-                return -1;
+                return 0;
             }
         };
 
